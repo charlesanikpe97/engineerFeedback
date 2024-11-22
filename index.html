@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineer Feedback Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Engineer Feedback Dashboard</h1>
+            <div class="metrics">
+                <div class="metric-card">
+                    <h3>CSAT Score</h3>
+                    <p class="score">4.90</p>
+                </div>
+                <div class="metric-card">
+                    <h3>Pending Reviews</h3>
+                    <p class="score">2</p>
+                </div>
+                <div class="metric-card">
+                    <h3>Time to Review Negative CSAT</h3>
+                    <p class="score">1.2 days</p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="feedback-list">
+                <h2>Recent Feedback</h2>
+                <div class="filters">
+                    <button class="active" data-filter="all">All</button>
+                    <button data-filter="positive">Positive</button>
+                    <button data-filter="negative">Negative</button>
+                    <button data-filter="uncontrollable">Uncontrollable</button>
+                </div>
+                <div id="feedback-container"></div>
+            </section>
+
+            <section class="ai-insights">
+                <h2>AI Insights</h2>
+                <div class="word-cloud" id="word-cloud"></div>
+                <div class="common-themes">
+                    <h3>Common Themes</h3>
+                    <ul id="themes-list"></ul>
+
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
